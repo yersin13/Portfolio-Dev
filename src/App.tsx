@@ -13,7 +13,7 @@ export default function App() {
       desc: 'React + SQL.js + Tailwind + Netlify',
       github: 'https://github.com/yourusername/inventory-app',
       demo: 'https://netlify-local-shop-inventory.netlify.app/',
-      image: '../public/assets/local.png',
+      image: '/local.png',
       details: 'Manage inventory with in-browser SQL. Full CRUD, category filters, and offline mode.',
     },
     {
@@ -21,7 +21,7 @@ export default function App() {
       desc: 'Ionic React + Netlify',
       github: 'https://github.com/yourusername/learn-quebecois',
       demo: 'https://learn-quebecois.netlify.app',
-       image: '../public/assets/learn.png',
+       image: '/learn.png',
       details: 'Language app with lessons, quiz games, and cultural expressions from Québec.',
     },
     {
@@ -29,7 +29,7 @@ export default function App() {
       desc: 'React + sql.js + Live SQL Console',
       github: 'https://github.com/yourusername/sql-demo',
       demo: 'https://sql-demo.netlify.app',
-       image: '../public/assets/sql.png',
+       image: '/sql.png',
       details: 'Live SQL editor with sortable tables and simulated transactions for learning.',
     },
   ];
