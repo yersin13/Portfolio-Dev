@@ -42,9 +42,9 @@
 //     },
 //   ];
 
-  
+
 //   return (
-    
+
 //   <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen relative overflow-x-hidden">
 //     {/* ANIMATED BACKGROUND */}
 //     <div className="absolute inset-0 -z-10 animate-gradient bg-[length:400%_400%] bg-gradient-to-tr from-purple-900 via-gray-800 to-blue-900 opacity-30" />
@@ -253,15 +253,15 @@ export default function App() {
       image: '/sql.png',
       details: 'Live SQL editor with sortable tables and simulated transactions for learning.',
     },
-  {
-  title: 'Enneagram Personality App',
-  desc: 'Ionic React + CSS Modules + Firebase + Netlify',
-  github: 'https://github.com/yersin13/enneagram-app',
-  demo: 'https://enneagram-app-yersin.netlify.app/',
-  image: '/enneagram.png',
-  details: 'An Enneagram personality test built with Ionic React and CSS Modules. Features animated type results, celebrity comparisons, and a dynamic multi-step layout. Firebase handles user sessions. Demo login available for testing.',
-  note: 'Demo credentials — Email: test@gmail.com | Password: 123456'
-}
+    {
+      title: 'Enneagram Personality App',
+      desc: 'Ionic React + CSS Modules + Firebase + Netlify',
+      github: 'https://github.com/yersin13/enneagram-app',
+      demo: 'https://enneagram-app-yersin.netlify.app/',
+      image: '/enneagram.png',
+      details: 'An Enneagram personality test built with Ionic React and CSS Modules. Features animated type results, celebrity comparisons, and a dynamic multi-step layout. Firebase handles user sessions. Demo login available for testing.',
+      note: 'Demo credentials — Email: test@gmail.com | Password: 123456'
+    }
 
   ];
 
@@ -309,60 +309,60 @@ export default function App() {
       </section>
 
       {/* PROJECTS */}
- <section id="projects" className="px-6 py-20 bg-black">
-  <h2 className="text-3xl font-bold text-center mb-10 text-white">Projects</h2>
-  <div className="grid md:grid-cols-3 gap-6">
-    {projects.map((project, i) => (
-      <motion.div
-        key={i}
-        layout
-        onClick={() => setExpanded(i === expanded ? null : i)}
-        className="cursor-pointer backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl p-6 shadow-md hover:shadow-xl transition-all"
-        whileHover={{ scale: 1.02 }}
-      >
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-52 object-cover object-top rounded-lg mb-4 border border-white/10 shadow"
-        />
-        <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-        <p className="text-sm text-gray-300">{project.desc}</p>
-
-        {expanded === i && (
-          <>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="mt-4 text-sm text-gray-400"
+      <section id="projects" className="px-6 py-20 bg-black">
+        <h2 className="text-3xl font-bold text-center mb-10 text-white">Projects</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {projects.map((project, i) => (
+            <motion.div
+              key={i}
+              layout
+              onClick={() => setExpanded(i === expanded ? null : i)}
+              className="cursor-pointer backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl p-6 shadow-md hover:shadow-xl transition-all"
+              whileHover={{ scale: 1.02 }}
             >
-              {project.details}
-            </motion.p>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-52 object-cover object-top rounded-lg mb-4 border border-white/10 shadow"
+              />
+              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+              <p className="text-sm text-gray-300">{project.desc}</p>
 
-            {/* Only show note if it exists — Enneagram App is the only one */}
-            {project.note && (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="mt-2 text-xs text-yellow-300 italic"
-              >
-                {project.note}
-              </motion.p>
-            )}
-          </>
-        )}
+              {expanded === i && (
+                <>
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="mt-4 text-sm text-gray-400"
+                  >
+                    {project.details}
+                  </motion.p>
 
-        <div className="flex gap-4 mt-4">
-          <a href={project.github} target="_blank" className="text-blue-400 hover:underline">
-            GitHub
-          </a>
-          <a href={project.demo} target="_blank" className="text-green-400 hover:underline">
-            Live Demo
-          </a>
+                  {/* Only show note if it exists — Enneagram App is the only one */}
+                  {project.note && (
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      className="mt-2 text-xs text-yellow-300 italic"
+                    >
+                      {project.note}
+                    </motion.p>
+                  )}
+                </>
+              )}
+
+              <div className="flex gap-4 mt-4">
+                <a href={project.github} target="_blank" className="text-blue-400 hover:underline">
+                  GitHub
+                </a>
+                <a href={project.demo} target="_blank" className="text-green-400 hover:underline">
+                  Live Demo
+                </a>
+              </div>
+            </motion.div>
+          ))}
         </div>
-      </motion.div>
-    ))}
-  </div>
-</section>
+      </section>
 
 
       {/* SKILLS */}
@@ -398,9 +398,9 @@ export default function App() {
         <h2 className="text-3xl font-bold mb-6 text-white">About Me</h2>
         <div className="bg-white/5 rounded-xl p-6 shadow-inner max-w-xl mx-auto">
           <p className="text-lg">
-            I'm a former mechanical engineer who fell in love with tech.  
-            After earning my CompTIA A+ and Network+ certifications and completing a DEP in Computing Support,  
-            I’ve been building web apps and system deployment tools that solve real problems — and help others learn too.  
+            I'm a former mechanical engineer who fell in love with tech.
+            After earning my CompTIA A+ and Network+ certifications and completing a DEP in Computing Support,
+            I’ve been building web apps and system deployment tools that solve real problems — and help others learn too.
             I’m currently enrolled in an AEC in Cybersecurity, and I believe in learning by doing.
           </p>
         </div>
