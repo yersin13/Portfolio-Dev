@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -9,13 +7,37 @@ export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const projects = [
+    // NEW — Mar‑Bec Website
+    {
+      title: 'Mar‑Bec Entretien (Bilingual Site)',
+      desc: 'React + Vite + CSS + Netlify',
+      github: 'https://github.com/yersin13/mar-bec-website', // update if different
+      demo: 'https://mar-bec-website.netlify.app/', // update if not live yet
+      image: '/mar.png',        // add this image to /public
+      details:
+        'Bilingual (FR/EN) website for a Québec cleaning company. Services, testimonials, About, and a secure contact form. Lightweight React/Vite build with polished, mobile-first CSS.',
+    },
+
+    // NEW — Résumé Builder
+    {
+      title: 'Résumé Builder (Multi-template)',
+      desc: 'React + Vite + TypeScript + CSS',
+      github: 'https://github.com/yersin13/Resume-builder', // update if different
+      demo: 'https://resume-builder-yersin.netlify.app/',     // put your Netlify URL
+      image: '/resume.png',                         // add this image to /public
+      details:
+        'Resume builder with live preview, FR/EN toggle, multiple templates (Modern/Creative/Classic), and PDF export. Structured form data with add/remove entries.',
+    },
+
+    // EXISTING
     {
       title: 'Local Shop Inventory',
       desc: 'React + SQL.js + Tailwind + Netlify',
       github: 'https://github.com/yourusername/inventory-app',
       demo: 'https://netlify-local-shop-inventory.netlify.app/',
       image: '/local.png',
-      details: 'Manage inventory with in-browser SQL. Full CRUD, category filters, and offline mode.',
+      details:
+        'Manage inventory with in-browser SQL. Full CRUD, category filters, and offline mode.',
     },
     {
       title: 'Learn Québécois',
@@ -23,7 +45,8 @@ export default function App() {
       github: 'https://github.com/yourusername/learn-quebecois',
       demo: 'https://learn-quebecois.netlify.app',
       image: '/learn.png',
-      details: 'Language app with lessons, quiz games, and cultural expressions from Québec.',
+      details:
+        'Language app with lessons, quiz games, and cultural expressions from Québec.',
     },
     {
       title: 'Advanced SQL Demo',
@@ -31,7 +54,8 @@ export default function App() {
       github: 'https://github.com/yourusername/sql-demo',
       demo: 'https://sql-demo.netlify.app',
       image: '/sql.png',
-      details: 'Live SQL editor with sortable tables and simulated transactions for learning.',
+      details:
+        'Live SQL editor with sortable tables and simulated transactions for learning.',
     },
     {
       title: 'Enneagram Personality App',
@@ -39,10 +63,10 @@ export default function App() {
       github: 'https://github.com/yersin13/enneagram-app',
       demo: 'https://enneagram-app-yersin.netlify.app/',
       image: '/eneagram.png',
-      details: 'An Enneagram personality test built with Ionic React and CSS Modules. Features animated type results, celebrity comparisons, and a dynamic multi-step layout. Firebase handles user sessions. Demo login available for testing.',
-      note: 'Demo credentials — Email: test@gmail.com | Password: 123456'
-    }
-
+      details:
+        'An Enneagram personality test built with Ionic React and CSS Modules. Features animated type results, celebrity comparisons, and a dynamic multi-step layout. Firebase handles user sessions. Demo login available for testing.',
+      note: 'Demo credentials — Email: test@gmail.com | Password: 123456',
+    },
   ];
 
   return (
@@ -118,7 +142,6 @@ export default function App() {
                     {project.details}
                   </motion.p>
 
-                  {/* Only show note if it exists — Enneagram App is the only one */}
                   {project.note && (
                     <motion.p
                       initial={{ opacity: 0 }}
@@ -144,16 +167,16 @@ export default function App() {
         </div>
       </section>
 
-
       {/* SKILLS */}
       <section id="skills" className="px-6 py-20 text-center bg-gray-900">
         <h2 className="text-3xl font-bold mb-8 text-blue-400">Skills</h2>
         <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300">
           {[
             'React',
+            'Vite',
             'TypeScript',
             'CSS',
-            'SQL',
+            'SQL / sql.js',
             'Ionic Framework',
             'Node.js',
             'Netlify',
@@ -164,7 +187,7 @@ export default function App() {
             'CompTIA A+ Certified',
             'Network+ Certified',
             'JavaScript',
-            'HTML / CSS'
+            'HTML / CSS',
           ].map((skill, i) => (
             <span key={i} className="bg-gray-700 px-4 py-2 rounded">
               {skill}
