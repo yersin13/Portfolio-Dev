@@ -33,7 +33,7 @@ export default function App() {
     {
       title: 'Local Shop Inventory',
       desc: 'React + SQL.js + Tailwind + Netlify',
-      github: 'https://github.com/yourusername/inventory-app',
+      github: 'https://github.com/yersin13/local-shop-inventory',
       demo: 'https://netlify-local-shop-inventory.netlify.app/',
       image: '/local.png',
       details:
@@ -42,7 +42,7 @@ export default function App() {
     {
       title: 'Learn Québécois',
       desc: 'Ionic React + Netlify',
-      github: 'https://github.com/yourusername/learn-quebecois',
+      github: 'https://github.com/yersin13/learn-quebecois',
       demo: 'https://learn-quebecois.netlify.app',
       image: '/learn.png',
       details:
@@ -51,8 +51,8 @@ export default function App() {
     {
       title: 'Advanced SQL Demo',
       desc: 'React + sql.js + Live SQL Console',
-      github: 'https://github.com/yourusername/sql-demo',
-      demo: 'https://sql-demo.netlify.app',
+      github: 'https://github.com/yersin13/Offline-SQL-Data-Explorer',
+      demo: 'https://offline-data-explorer.netlify.app/',
       image: '/sql.png',
       details:
         'Live SQL editor with sortable tables and simulated transactions for learning.',
